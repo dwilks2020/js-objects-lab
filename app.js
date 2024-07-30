@@ -78,12 +78,13 @@ Exercise 6
 Solve Exercise 6 here:
 */
 
+/*
 game.gyms.forEach(gyms => {
   if (gyms.difficulty < 3) {
     gyms.completed = true;
   }
 });
-
+*/
 //console.log(game.gyms);
 
 
@@ -122,6 +123,10 @@ Exercise 8
 
 Solve Exercise 8 here:
 */
+const printParty = pokemon.filter(a => a.starter);
+console.log(printParty);
+
+console.log(printParty,"Party!!____>>>>>>")
 
 /*
 Exercise 9
@@ -132,24 +137,13 @@ Exercise 9
 Solve Exercise 9 here:
 */
 
+// call
 
+const printStarters = pokemon.filter(a => a.starter);
+console.log(printStarters);
 /*
-Exercise 9
-1. Can you print out all the starter Pokémon from the `pokemon` array?
-2. Think about how you can identify a starter Pokémon and then log their names.
 
 
-Solve Exercise 9 here:
-*/
-const printStarters = () => {
-
-console.log(pokemon[0]);
-console.log(pokemon[3]);
-console.log(pokemon[6]);
-console.log(pokemon[24]);
-
-}
-//printStarters();
 
 
 /*
@@ -174,7 +168,7 @@ game.catchPokemon(pokemon[100]); // 100 logs electrode
 
 //console.log(game.party);
 
-
+// console log stop
 /*
 Exercise 11
 1. Copy the `catchPokemon` method that you just wrote above, and paste it below. Modify it so that it also decreases the number of pokeballs in your inventory each time you catch a Pokémon.
@@ -186,7 +180,7 @@ After updating the method, call it and pass in a Pokemon object of your choice f
 Also, log the `game.items` array to confirm that the pokeball quantity is being decremented.
 
 Solve Exercise 11 here:
-*/
+
 //previous code 
 
 game.catchPokemon = function(pokemonObj) {
@@ -218,13 +212,14 @@ Exercise 12
 
 Solve Exercise 12 here:
 */
+/*
 game.gyms.forEach(gyms => {
   if (gyms.difficulty < 6) {
     gyms.completed = true;
   }
 });
 console.log(game.gyms);
-
+*/
 /*
 Exercise 13
 1. Create a `gymStatus` method in `game` to tally completed and incomplete gyms.
@@ -248,7 +243,7 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 Solve Exercise 13 here:
 */
 
-
+/*
 const gymTally = { completed: 0, incomplete: 0 };
 
 game.gyms.forEach(gym => {
@@ -280,6 +275,7 @@ This method should:
 
 Solve Exercise 14 here:
 */
+/*
 partyCount=function() {
   return game.party.length;{console.log(partyCount)};
 }
@@ -292,11 +288,13 @@ Exercise 15
 
 Solve Exercise 15 here:
 */
+/*
 game.gyms.forEach(gyms => {
   if (gyms.difficulty < 8) {
     gyms.completed = true;
     
   }
+  {console.log(gymTally);}
 });
 console.log(game.gyms);
 
@@ -306,6 +304,8 @@ Exercise 16
 
 Solve Exercise 16 here:
 */
+/*
 console.log(game);
 
 console.log(gymTally);
+*/
